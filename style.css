@@ -1,0 +1,402 @@
+/*
+Theme Name: Radio PRI
+Description: Portfolio Theme based on Distressed Leather Boots
+Author: Sherrie Gonzalez
+Author URI: http://www.sherriegonzalez.com
+Tags: leather, fluevog, distressed, portfolio
+*/
+
+@import "css/reset.css";
+@import "css/typography.css";
+@import "css/layout.css";
+
+body{
+background-color: #444;
+font-family: georgia, serif;
+font-size: 71.2%;
+line-height: 1.5;
+padding: 0;
+margin: auto;
+height: 9in;
+width: 13in;
+text-align: left; 
+}
+
+h1 {
+color: black;
+font-family: georgia, san-serif;
+font-size: 18px;
+}
+
+#title {
+position: absolute;
+float: left;
+margin: 165px 310px 0;
+text-shadow: 0px 2px 3px #e0aed3;
+}
+
+#title h1{
+font-family: 'Satisfy', cursive;
+font-size: 52px;
+color: #4a1c37;
+}
+
+#header h6 {
+display: none;
+}
+
+h3 {
+font-family: 'Satisfy', cursive;
+font-size: 22px;
+text-align: center;
+}
+
+#blurb{
+position: absolute;
+float: left;
+margin: 250px 310px 0;
+width: 500px;
+height: 200px;
+color: #fff;
+}
+
+#blurb p {
+font-family: georgia, san-serif;
+font-size: 17px;
+}
+
+#header{
+background: #fff url(images/p_texture.png) repeat; 
+position: relative;
+height: 50%;
+width: 100%;
+min-width: 1000px;
+}
+
+#head_stitch {
+z-index: 10;
+background: url(images/stitch_b.png) repeat-x; 
+position: absolute;
+height: 70px;
+width: 100%;
+margin: 410px 0;
+}
+
+#buckle{
+z-index: 10;
+background: url(images/buckle.png) no-repeat; 
+height: 500px;
+width: 200px;
+position: relative;
+float: left;
+margin: 0 40px 0 60px;
+}
+
+#sidebar{
+display: none;
+}
+
+#access {
+z-index: 10;
+font-family: georgia, serif;
+min-width: 240px;
+font-size: 17px;
+color: white;
+position: absolute;
+float: left;
+margin: 0 0 0 1000px;
+text-decoration: none;
+line-height: 3;
+}
+
+#access a:link {
+color: #fff; 
+text-decoration: none;
+}
+
+#access a:active {
+color: #4a1c37; 
+text-decoration: none; 
+text-shadow: 0px 2px 3px #e0aed3;
+}
+
+#access li.current_page_item a {
+color: #4a1c37; 
+font-weight: bold;
+text-decoration: none; 
+text-shadow: 0px 2px 3px #e0aed3;
+}
+
+#access a:visited {
+color: #fff; 
+text-decoration: none; 
+}
+
+#access a:hover {
+color: #ccc; 
+text-decoration: none; 
+}
+
+#access ul li {
+color: white;
+float: left;
+}
+
+.menu li {
+border-right: 1px solid #fff;
+}
+
+#access a {
+margin: 0 10px 0 10px;
+}
+
+.social {
+display: block;
+}
+
+#twit_but {
+background: url(images/twit_button.png) no-repeat; 
+width: 100px;
+height: 100px;
+position: relative;
+float: left;
+margin: 70px 0 0 580px;
+}
+
+#fb_but {
+background: url(images/fb_button.png) no-repeat; 
+width: 100px;
+height: 100px;
+position: relative;
+float: left;
+margin: 150px 0;
+}
+
+#ln_but {
+background: url(images/ln_button.png) no-repeat; 
+width: 100px;
+height: 100px;
+position: relative;
+float: left;
+margin: 270px -170px 0;
+}
+
+#content{
+background: url(images/wood_dark.jpg) repeat; 
+position: relative;
+width: 100%;
+padding: 50px 0;
+min-height: 550px;
+max-height: 100%;
+text-align: left;
+}
+
+#about {
+position: relative;
+float: left;
+max-width: 450px;
+margin: 50px 80px 0 0;
+font-size: 14px;
+}
+
+#about p{
+line-height: 20px;
+margin-top: 0.5em; 
+}
+
+#thumbnails {
+width: 900px;
+padding: 50px 0;
+margin: 0 10px 0 0;
+}
+
+#thumbnails h2 {
+display: none;
+}
+
+#gallery {
+z-index: 100;
+width: 100%;
+height: 100%;
+padding: 30px 80px 0; 
+margin: 0 50px 0 0;
+overflow: auto;
+}
+
+#gallery img {
+height: 150px;
+width: 150px;
+position: relative;
+float: left;
+margin: 20px;
+background: url(images/pol_bg.png) repeat;
+padding: 10px 10px 25px 10px;
+border: 1px solid #fff;
+box-shadow: 3px 5px 15px #333;
+-webkit-box-shadow: 3px 5px 15px #333;
+-moz-box-shadow: 3px 5px 15px #333;
+}
+
+#gallery h1, #about h1{
+font-family: 'Satisfy', cursive;
+font-size: 30px;
+color: #000;
+text-shadow: 0px 1.5px 3px #FFE4C4;
+}
+
+#me {
+background: url(images/pol_bg.png) repeat;
+width: 200px;
+height: 200px;
+float: left;
+padding: 10px 10px 25px 10px;
+border: 1px solid #fff;
+position: relative;
+margin: 70px 0 0 10px;
+box-shadow: 3px 5px 15px #333;
+-webkit-box-shadow: 3px 5px 15px #333;
+-moz-box-shadow: 3px 5px 15px #333;
+-webkit-transform: rotate(10deg);
+-moz-transform: rotate(10deg);
+}
+
+
+#ui {
+float: left;
+background: url(images/pol_bg.png) repeat;
+height: 250px;
+width: 250px;
+padding: 10px 10px 50px 10px;
+border: 1px solid #fff;
+position: absolute;
+margin: 60px 220px 0 50px;
+box-shadow: 3px 5px 15px #333;
+-webkit-box-shadow: 3px 5px 15px #333;
+-moz-box-shadow: 3px 5px 15px #333;
+-webkit-transform: rotate(-30deg);
+-moz-transform: rotate(-30deg);
+}
+
+#web{
+float: left;
+background: url(images/pol_bg.png) repeat;
+height: 250px;
+width: 250px;
+padding: 10px 10px 50px 10px;
+border: 1px solid #fff;
+position: absolute;
+margin: 60px 220px 0 350px;
+box-shadow: 3px 5px 15px #333;
+-webkit-box-shadow: 3px 5px 15px #333;
+-moz-box-shadow: 3px 5px 15px #333;
+-webkit-transform: rotate(-15deg);
+-moz-transform: rotate(-15deg);
+}
+
+#print {
+float: left;
+background: url(images/pol_bg.png) repeat; 
+height: 250px;
+width: 250px;
+padding: 10px 10px 50px 10px;
+border: 1px solid #fff;
+position: absolute;
+margin: 60px 220px 0 650px;
+box-shadow: 3px 5px 15px #333;
+-webkit-box-shadow: 3px 5px 15px #333;
+-moz-box-shadow: 3px 5px 15px #333;
+-webkit-transform: rotate(20deg);
+-moz-transform: rotate(20deg);
+}
+
+#brand {
+float: left;
+background: url(images/pol_bg.png) repeat;
+height: 250px;
+width: 250px;
+padding: 10px 10px 50px 10px;
+border: 1px solid #fff;
+position: absolute;
+margin: 60px 220px 0 950px;
+-webkit-box-shadow: 3px 5px 15px #333;
+box-shadow: 3px 5px 15px #333;
+-moz-box-shadow: 3px 5px 15px #333;
+-webkit-transform: rotate(-10deg);
+-moz-transform: rotate(-10deg);
+}
+
+#contact {
+position: absolute;
+float: left;
+margin: 30px 220px 0 200px;
+}
+
+#made {
+position: absolute;
+float: left;
+margin: 30px 220px 0 350px;
+}
+
+#friends {
+position: absolute;
+float: left;
+margin: 30px 220px 0 580px;
+}
+
+#love {
+position: absolute;
+float: left;
+margin: 30px 220px 0 750px;
+}
+
+#foot_text {
+position: relative;
+float: right;
+margin: 190px 40px 0 0;
+font-size: 14px;
+}
+
+#foot_text a{
+text-decoration: none;
+color: #111;
+text-shadow: 0px 1.5px 3px #ccc;
+}
+
+#footer ul li {
+line-height: 2em;
+text-decoration: none;
+}
+
+#footer ul li a{
+line-height: 2em;
+text-decoration: none;
+color: #ccc;
+}
+
+#footer ul li a:hover{
+line-height: 2em;
+text-decoration: none;
+color: #999;
+}
+
+#footer h2 {
+color: #000;
+text-shadow: 0px 1.5px 3px #666;
+}
+
+#footer{
+font-size: 15px;
+color: #ccc;
+background: #444;
+width: 100%;
+min-height: 250px;
+overflow: auto;
+position: relative;
+background: rgb(68,68,68); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(68,68,68,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(68,68,68,1)), color-stop(100%,rgba(14,14,14,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(68,68,68,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(68,68,68,1) 0%,rgba(14,14,14,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(68,68,68,1) 0%,rgba(14,14,14,1) 100%); /* IE10+ */
+background: linear-gradient(top, rgba(68,68,68,1) 0%,rgba(14,14,14,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
