@@ -280,6 +280,21 @@ add_filter( 'excerpt_more', 'twentyten_auto_excerpt_more' );
  * @since Twenty Ten 1.0
  * @return string Excerpt with a pretty "Continue Reading" link
  */
+
+/**
+ * Enqueue scripts and styles for front-end.
+ *
+ * @author  Sherrie Gonzalez
+ *
+ * @return 	void
+ */
+function sherrie_scripts_styles() {
+
+	wp_enqueue_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'sherrie_scripts_styles' );
+
 function twentyten_custom_excerpt_more( $output ) {
 	if ( has_excerpt() && ! is_attachment() ) {
 		$output .= twentyten_continue_reading_link();

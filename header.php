@@ -8,11 +8,16 @@
  * @subpackage Starkers
  * @since Starkers 3.0
  */
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<html <?php language_attributes(); ?>>
+?>
+<!DOCTYPE html>
+<!--[if IE 8]>     <html class="ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#" <?php language_attributes(); ?>> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:fb="http://ogp.me/ns/fb#" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -26,6 +31,7 @@
 <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -44,39 +50,55 @@
 
 <div id="header">
 
-<div id="head_stitch"></div>
+<div class="top-bar">
 
-<div id="buckle"></div>
+	<div class="top_container">
 
-<div id="title">
-	<h1>
-	Hello, my name is Sherrie
-	</h1>
-</div>	
-	
-<div id="blurb">	
-	<p>
-	and this is my space on the web. I am a Graphic Designer and Front End Developer. I made my first website in 1998. When I'm not designing, I enjoy jogging, riding my bicycle and drinking fancy beers. Feel free to contact me if you like any or all of things I've just talked about.
-	</p>
+		<h1 class="logo"><a href="<?php echo home_url( '/' ); ?>">Cloud #9</a></h1>
+
+		<h1 class="menu-toggle">&#9776;</h1>
+
+		<div id="access" role="navigation">
+			<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary') ); ?>
+				<div class="clear"></div>
+		</div><!--END #access -->
+
+		<div class="clear"></div>
+
+	</div><!--END .top-container -->
+
 </div>
 
-<div id="access" role="navigation">
-		 <?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
-		<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary') ); ?><a href="http://www.rugglesisforlovers.com"> Blog</a>
+	<div class="head-container">
 
-	</div><!-- #access -->
+	<div id="buckle"></div>
+		
+	<div id="blurb">	
+		<h1 id ="title">Hello, my name is Sherrie</h1>
+		<p>I am a Graphic Designer and Front End Developer in the Boston Metro Area. I'm available for short term contract jobs and freelance.
+		</p>
+	</div>
 
-<div class="social">
+	<div class="social">
 
-	<a class="icon" id="twit_but" href="http://twitter.com/#!/sherrieberrie" target="_blank"></a>
-	
-	<a class="icon" id="fb_but" href="http://www.facebook.com/plasticgirl" target="_blank"></a>
-	
-	<a class="icon" id="ln_but" href="http://www.linkedin.com/pub/sherrie-gonzalez/4/772/108" target="_blank"></a>
-	
+		<a class="icon" id="twit_but" href="http://twitter.com/#!/sherrieberrie" target="_blank"></a>
+		
+		<a class="icon" id="fb_but" href="http://www.facebook.com/plasticgirl" target="_blank"></a>
+		
+		<a class="icon" id="ln_but" href="http://www.linkedin.com/pub/sherrie-gonzalez/4/772/108" target="_blank"></a>
 
-</div> <!-- END social--> 
-	
+		<div class="clear"></div>
+
+	</div> <!-- END social--> 
+
+	<div class="clear"></div>
+		
+	</div> <!-- END head-container--> 
+
+	<div class="clear"></div>
+
+	<div id="head_stitch"></div>
+
 </div>
 
 <body <?php body_class(); ?>>
@@ -89,3 +111,4 @@
 	
 	
 <div id="content">
+	<div class="content-container">

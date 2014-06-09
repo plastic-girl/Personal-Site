@@ -2,9 +2,119 @@
 /* TYPOGRAPHY */
 /* ----------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 { font-weight:bold } /* This helps to identify headings at the initial build stage, so I thought it'd be useful to have it */
-.alert { background:red; color:white } /* 'alert' has a basic style, since it's useful to have it standing out for testing purposes.
+h1, h2, h3, h4, h5, h6 { 
+	font-weight: bold 
+} /* This helps to identify headings at the initial build stage, so I thought it'd be useful to have it */
+.alert { 
+	background: red; 
+	color: white;
+} /* 'alert' has a basic style, since it's useful to have it standing out for testing purposes. */
 
+
+h1 {
+	color: black;
+	font: 400 18px 'Helvetica', Arial, san-serif;
+}
+
+h1#title {
+	font: 400 52px 'Satisfy', cursive;
+	color: #4a1c37;
+	text-shadow: 0px 2px 3px #e0aed3;
+}
+
+.top-bar h1 {
+	color: #ccc;
+	font: 400 40px/1.8em 'Satisfy', cursive;
+	text-shadow: 0px 1.5px 3px #666;
+	margin: 10px 0 0 10px;
+	text-align: left;
+}
+
+.top-bar h1 a, .top-bar h1 a:visited, .top-bar h1 a:hover {
+	text-decoration: none;
+	color: #ccc;
+}
+
+.top-bar h1.menu-toggle {
+	font-size: 40px;
+	display: none;
+	position: absolute;
+	right: 40px;
+	top: 0;
+}
+
+#gallery h1, #about h1 {
+	font: 400 40px 'Satisfy', cursive;
+	color: #000;
+	text-shadow: 0px 1.5px 3px #FFE4C4;
+	margin-top: 20px;
+}
+
+#thumbnails h3 {
+	font: 400 22px/2em 'Satisfy', cursive;
+	text-align: center;
+}
+
+h3.widget-title {
+	font: 26px/2em 'Satisfy', cursive;
+	text-align: left;
+	color: #000;
+	text-shadow: 0px 1.5px 3px #666;
+}
+
+#header h6 {
+	display: none;
+}
+
+#blurb p {
+	font: 800 17px/1.6em 'Helvetica', Arial, san-serif;
+}
+
+#about p {
+	font: 400 15px/1.7em 'Helvetica', Arial, san-serif;
+	margin-top: 1em; 
+}
+
+a, a:visited {
+		color: #4a1c37;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.gallery_text h2 {
+	font: 400 36px/1.6em 'Satisfy', cursive;
+	color: #000;
+	text-shadow: 0px 1.5px 3px #FFE4C4;
+}
+
+.gallery_text h2 a {
+	color: #000;
+	text-decoration: none;
+}
+
+.gallery_text h2 a:hover {
+	color: #4a1c37;
+}
+
+.gallery_text h3 {
+	font: 800 16px/2em 'Helvetica', Arial, San-serif;
+}
+
+.gallery_text p {
+	font: 400 16px/1.8em 'Helvetica', Arial, San-serif;
+}
+
+@media only screen and (max-width: 960px) {
+
+	.top-bar h1 {
+		text-align: center;
+		margin: 10px 0 0;
+	}
+
+}
 
 
 /* Font stack options
